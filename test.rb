@@ -14,7 +14,6 @@ test do
   ]
 
   threads count: 10 do
-      #visit name: 'acl home page', url: 'http://accounts.aclgrc.com'
     post_body = File.read("test.json")
     transaction 'get csv api' do
       get name: 'get csv',
